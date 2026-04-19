@@ -441,7 +441,6 @@ p + p {
 }
 
 @media (max-width: 900px) {
-    .header-inner,
     .hero-grid,
     .split-layout,
     .links-layout,
@@ -453,11 +452,14 @@ p + p {
     }
 
     .header-inner {
-        display: grid;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
     }
 
     .main-nav {
         justify-content: flex-start;
+        gap: 8px;
     }
 }
 
@@ -468,6 +470,21 @@ p + p {
 
     .container {
         width: min(100% - 20px, 1120px);
+    }
+
+    .header-inner {
+        gap: 10px;
+    }
+
+    .main-nav {
+        gap: 6px;
+        flex-wrap: wrap;
+    }
+
+    .main-nav a {
+        padding: 8px 12px;
+        font-size: 0.85rem;
+        flex: 0 1 auto;
     }
 
     .brand {
@@ -499,11 +516,6 @@ p + p {
     .gallery-item img,
     .mini-card img {
         height: 210px;
-    }
-
-    .main-nav a {
-        padding: 8px 12px;
-        font-size: 0.9rem;
     }
 
     .button {
