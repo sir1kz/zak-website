@@ -473,17 +473,17 @@ p + p {
     }
 
     .header-inner {
-        gap: 10px;
+        gap: 8px;
     }
 
     .main-nav {
-        gap: 6px;
+        gap: 4px;
         flex-wrap: wrap;
     }
 
     .main-nav a {
-        padding: 8px 12px;
-        font-size: 0.85rem;
+        padding: 6px 10px;
+        font-size: 0.75rem;
         flex: 0 1 auto;
     }
 
