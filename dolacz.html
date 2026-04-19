@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dołącz do nas | Zagłębiowska Akademia Koszykówki</title>
+    <link rel="icon" href="img/favicon-32x32.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <img src="img/zakk.png" alt="Logo Zagłębiowskiej Akademii Koszykówki">
+                <div>
+                    <p class="brand-title">Zagłębiowska Akademia Koszykówki</p>
+                    <p class="brand-subtitle">Podstrona 3 - formularz</p>
+                </div>
+            </div>
+
+            <nav class="main-nav" aria-label="Nawigacja główna">
+                <a href="index.html">Strona główna</a>
+                <a href="galeria.html">Gazetka</a>
+                <a href="zrodla.html">Źródła</a>
+                <a class="active" href="dolacz.html">Dołącz do nas</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="subpage-main">
+        <section class="container page-intro">
+            <p class="section-kicker">Podstrona 3</p>
+            <h1>Formularz dla przyszłych zawodników</h1>
+            <p>
+                Ta część strony zawiera formularz zgłoszeniowy
+                oraz krótki plan pierwszego treningu próbnego.
+            </p>
+        </section>
+
+        <section class="container split-layout form-layout">
+            <article class="card">
+                <h2>Zgłoszenie</h2>
+                <form class="join-form" action="mailto:watahasosnowiec@gmail.com?subject=Zgloszenie%20do%20akademii" method="post" enctype="text/plain">
+                    <label for="name">Imię i nazwisko</label>
+                    <input id="name" name="Imie i nazwisko" type="text" placeholder="Wpisz swoje imię i nazwisko" required>
+
+                    <label for="age">Wiek</label>
+                    <input id="age" name="Wiek" type="number" min="7" max="20" placeholder="Np. 14" required>
+
+                    <label for="email">Adres e-mail</label>
+                    <input id="email" name="Adres e-mail" type="email" placeholder="twojmail@example.com" required>
+
+                    <label for="position">Ulubiona pozycja na boisku</label>
+                    <select id="position" name="Ulubiona pozycja na boisku">
+                        <option>Rozgrywający</option>
+                        <option>Rzucający obrońca</option>
+                        <option>Niski skrzydłowy</option>
+                        <option>Silny skrzydłowy</option>
+                        <option>Środkowy</option>
+                    </select>
+
+                    <label for="message">Dlaczego chcesz trenować?</label>
+                    <textarea id="message" name="Dlaczego chcesz trenowac" rows="5" placeholder="Napisz kilka zdań o sobie" required></textarea>
+
+                    <p>Po kliknięciu otworzy się Twój program pocztowy z gotową wiadomością do wysłania.</p>
+                    <button type="submit" class="button">Otwórz wiadomość e-mail</button>
+                </form>
+            </article>
+
+            <article class="card card-highlight">
+                <h2>Jak wygląda pierwszy trening?</h2>
+                <ul class="feature-list feature-list-light">
+                    <li>krótka rozgrzewka i ćwiczenia ogólnorozwojowe</li>
+                    <li>podstawy kozłowania, podań i rzutów</li>
+                    <li>zabawy ruchowe oraz proste gry zespołowe</li>
+                    <li>rozmowa z trenerem i wskazówki na przyszłość</li>
+                </ul>
+                <p>
+                    Na pierwszy trening wystarczy strój sportowy, buty na halę oraz chęć do nauki.
+                    Najważniejsze są zaangażowanie i pozytywne nastawienie.
+                </p>
+            </article>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <h3>Kontakt</h3>
+                <p>tel. <a href="tel:+48777777777">+48 777 777 777</a></p>
+                <p>e-mail: <a href="mailto:watahasosnowiec@gmail.com">watahasosnowiec@gmail.com</a></p>
+            </div>
+
+            <div>
+                <h3>Szybkie linki</h3>
+                <p><a href="index.html">Strona główna</a></p>
+                <p><a href="galeria.html">Gazetka</a></p>
+            </div>
+
+            <div>
+                <h3>Cel podstrony</h3>
+                <p>Formularz pokazuje dodatkowy element strony i podnosi ocenę za własny pomysł.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
