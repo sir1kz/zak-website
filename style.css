@@ -501,7 +501,11 @@ p + p {
         height: 210px;
     }
 
-    .main-nav a,
+    .main-nav a {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+
     .button {
         width: 100%;
         text-align: center;
