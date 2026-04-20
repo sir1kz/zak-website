@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
+    <!-- Шапка сайта: логотип + меню -->
     <header class="site-header">
         <div class="container header-inner">
             <div class="brand">
@@ -30,6 +31,7 @@
         </div>
     </header>
 
+    <!-- Основной контент страницы "Dołącz do nas" -->
     <main class="subpage-main">
         <section class="container page-intro">
             <p class="section-kicker">Podstrona 3</p>
@@ -40,17 +42,21 @@
             </p>
         </section>
 
+        <!-- Двухколоночный блок: форма и описание первого тренинга -->
         <section class="container split-layout form-layout">
             <article class="card">
                 <h2>Zgłoszenie</h2>
+                <!-- Отправка без сервера: через почтовый клиент пользователя -->
                 <form class="join-form" action="mailto:watahasosnowiec@gmail.com?subject=Zgloszenie%20do%20akademii" method="post" enctype="text/plain">
                     <label for="name">Imię i nazwisko</label>
                     <input id="name" name="Imie i nazwisko" type="text" placeholder="Wpisz swoje imię i nazwisko" required>
 
                     <label for="age">Wiek</label>
+                    <!-- Ограничение возраста -->
                     <input id="age" name="Wiek" type="number" min="7" max="20" placeholder="Np. 14" required>
 
                     <label for="email">Adres e-mail</label>
+                    <!-- Базовая валидация e-mail в браузере -->
                     <input id="email" name="Adres e-mail" type="email" placeholder="twojmail@example.com" required>
 
                     <label for="position">Ulubiona pozycja na boisku</label>
@@ -86,8 +92,9 @@
         </section>
     </main>
 
+    <!-- Футер: контакты и быстрые ссылки -->
     <footer class="site-footer">
-        <div class="container footer-grid">
+        <div class="container footer-grid footer-grid-two">
             <div>
                 <h3>Kontakt</h3>
                 <p>tel. <a href="tel:+48777777777">+48 777 777 777</a></p>
@@ -99,11 +106,7 @@
                 <p><a href="index.html">Strona główna</a></p>
                 <p><a href="galeria.html">Gazetka</a></p>
             </div>
-
-            <div>
-                <h3>Cel podstrony</h3>
-                <p>Formularz pokazuje dodatkowy element strony i podnosi ocenę za własny pomysł.</p>
-            </div>
+     
         </div>
     </footer>
 </body>

@@ -5,6 +5,7 @@
 }
 
 :root {
+    /* Основные переменные темы: цвета, границы и тени */
     --bg-dark: #050505;
     --bg-panel: rgba(18, 42, 16, 0.86);
     --bg-soft: rgba(236, 244, 228, 0.22);
@@ -39,11 +40,13 @@ a {
 }
 
 .container {
+    /* Общий контейнер с ограничением ширины */
     width: min(1120px, calc(100% - 32px));
     margin: 0 auto;
 }
 
 .site-header {
+    /* Фиксированная шапка с размытием фона */
     position: sticky;
     top: 0;
     z-index: 10;
@@ -128,6 +131,7 @@ h3 {
 .links-layout,
 .footer-grid,
 .form-layout {
+    /* Универсальные сетки для секций */
     display: grid;
     gap: 24px;
 }
@@ -136,6 +140,7 @@ h3 {
 .split-layout,
 .links-layout,
 .form-layout {
+    /* Базово 2 колонки на десктопе */
     grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
@@ -211,6 +216,7 @@ p + p {
 }
 
 .button {
+    /* Базовая кнопка (CTA) */
     display: inline-block;
     padding: 12px 22px;
     border: none;
@@ -397,6 +403,7 @@ p + p {
 }
 
 .join-form {
+    /* Вертикальный layout формы */
     display: grid;
     gap: 12px;
 }
@@ -436,11 +443,17 @@ p + p {
     grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.footer-grid-two {
+    /* Вариант футера для 2 колонок (например, dolacz.html) */
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .site-footer a:hover {
     color: var(--accent-alt);
 }
 
 @media (max-width: 900px) {
+    /* Планшеты и небольшие экраны: всё в одну колонку */
     .hero-grid,
     .split-layout,
     .links-layout,
@@ -464,6 +477,7 @@ p + p {
 }
 
 @media (max-width: 640px) {
+    /* Телефоны: уплотняем отступы и упрощаем интерфейс */
     body {
         background-attachment: scroll;
     }
@@ -523,4 +537,3 @@ p + p {
         text-align: center;
     }
 }
-
